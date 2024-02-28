@@ -409,15 +409,14 @@ body {
   background-color: #f4f4f4;
 }
 
-.container {
-  width: 400px; /* Set a fixed width for the container */
+.form-container {
+  max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f2e9e9;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(6, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border-color: #060000;
 }
 
 h1 {
