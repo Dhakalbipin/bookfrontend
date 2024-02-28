@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ROboto", sans-serif;
+}
+#navbar {
+  background-color: skyblue;
+  padding-left: 50px;
+}
+#logo {
+  color: black;
+  font-weight: bold;
+}
+.nav-link {
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 15px;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  color: white;
+}
+.d-flex {
+  border-radius: 5x;
+}
+.btn.btn:hovor {
+  color: black;
+}
+/* end of the nav bar csss */
+
+/* Home section CSS index.html start*/
+.home {
+  width: 100%;
+  height: 91.5vh;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+.home .img {
+  flex: 1 1 400px;
+}
+.home .img img {
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 400px;
+}
+.content h3 {
+  margin-left: 50px;
+  font-size: 60px;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+}
+.content p {
+  margin: 50px;
+}
+.content h5 {
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 29px;
+}
+.content h2 {
+  margin-left: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.changecontent:after {
+  content: " ";
+  color: green;
+  text-shadow: 1px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "History";
+  }
+  20% {
+    content: "Novel";
+  }
+  40% {
+    content: "literature";
+  }
+  60% {
+    content: "Financial";
+  }
+}
+.content .btn {
+  margin-left: 50px;
+  margin-top: 20;
+  width: 150px;
+  height: 38px;
+  letter-spacing: 3px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+.content .btn :hover {
+  background-color: green;
+}
+/* Home section CSS index.html start*/
+
+/* Services */
+/*services*/
+
+.services {
+  width: 100%;
+  height: auto;
+  margin: 35px 0;
+}
+.services h2 {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.services .services_box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.services .services_box .services_card {
+  text-align: center;
+  width: 310px;
+  height: auto;
+  box-shadow: 0 0 8px #089da1;
+  padding: 15px 10px;
+}
+
+.services .services_box .services_card i {
+  color: skyblue;
+  font-size: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.services .services_box .services_card h3 {
+  margin-bottom: 10px;
+}
+
+/* Services */
+
+/* product cards */
+#product-cards h1 {
+  margin-top: 50px;
+  font-weight: bold;
+  color: green;
+  text-shadow: 1px 1px 1px black;
+}
+#product-cards .card {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  margin-left: 0;
+  width: 70px;
+}
+#product-cards.card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s ease;
+}
+.overlay i img {
+  background-color: green;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-right: 100px;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.overlay .btn-secondary {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+#product-cards .card h3 {
+  color: green;
+  text-decoration: overline;
+  text-shadow: 1px 1px 1px black;
+}
+#product-cards h5 {
+  font-size: 15px;
+}
+.Seemore {
+  margin-left: 45%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 38px;
+  letter-spacing: 1px;
+  background-color: lightgreen;
+  font-weight: bold;
+  border-radius: 10px;
+}
+/* product cards */
+
+/* about us */
+.about {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .about_image img {
+  width: 800px;
+}
+
+.about .about_tag h1 {
+  font-size: 50px;
+  position: relative;
+  bottom: 35px;
+}
+
+.about .about_tag p {
+  line-height: 22px;
+  width: 650px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.about .about_tag .about_btn {
+  padding: 10px 20px;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 50px;
+}
+
+/* about us */
+
+/* contat us */
+#contact {
+  margin-top: 50px;
+}
+#contact h3 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.message button {
+  margin-top: 20px;
+  width: 150px;
+  height: 38px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* contat us */
+/* footer  */
+#footer {
+  padding: 0 0 30px 0;
+  color: black;
+  font-size: 14px;
+  background: skyblue;
+}
+#footer .footer-top .footer-contact a {
+  font-size: 20-x;
+  color: black;
+  font-weight: bold;
+}
+#footer .footer-top .footer-contact a img {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  margin-top: 10%;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  padding: 2px 30px 2px 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  margin-top: 4%;
+  margin-right: 20px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 5px;
+  border-radius: 50px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s ease;
+}
+#footer .footer-top .social-links a:hover {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+#footer .copyright {
+  text-align: center;
+  float: left;
+}
+#footer .credits {
+  float: right;
+  text-align: center;
+}
+/* footer  */
+/* login Csss Start*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2e9e9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #080000;
+  border-radius: 7px;
+}
+
+.login-button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #ff3333;
+  margin-bottom: 15px;
+}
+
+.no-account {
+  margin-top: 20px;
+}
+
+.signup-link {
+  color: #4caf50;
+  text-decoration: none;
+}
+/* login Csss End*/
+/* This is the start of the Signup code  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 400px; /* Set a fixed width for the container */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(6, 0, 0, 0.1);
+  text-align: center;
+  border-color: #060000;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0a0000;
+}
+
+.required {
+  color: red;
+}
+
+input,
+select {
+  width: 100%; /* Set width to 100% to match the container */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #060000;
+  border-radius: 7px;
+}
+
+.signup-form {
+  text-align: left;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-prompt {
+  margin-top: 20px;
+}
+
+.login-link {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* This is the End of the Signup code  */
+
+/* this is the Start of Book add form Css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #080000;
+  border-radius: 7px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+/* this is the Start of Book add form Css */
