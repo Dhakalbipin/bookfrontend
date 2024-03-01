@@ -46,8 +46,9 @@
   <body class="your-body-class">
     <div class="login-container">
       <h1>Login</h1>
+
       <form
-        action="http://localhost:3000/api/login"
+        onsubmit="submitLogin(); return false;"
         method="POST"
         class="login-form"
       >
@@ -66,5 +67,11 @@
         </p>
       </form>
     </div>
+    <script>
+      function submitLogin() {
+        console.log("test2");
+      }
+    </script>
+    <script src="../Javascript/login.js"></script>
   </body>
 </html>
